@@ -146,10 +146,11 @@ class scre:
         iro = (0, 0, 255)
         score = 0
         self.img = self.fonto.render("スコア", 0, iro)
-        self_img=self.img
-        self_img.center(100,50)
+        self.img.center(100,50)
 
     def update(self):
+        moji=pg.surface(self.img)
+        screen.blit(self.img,moji)
         
 
 
