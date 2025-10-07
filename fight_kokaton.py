@@ -140,6 +140,17 @@ class Bomb:
         self.rct.move_ip(self.vx, self.vy)
         screen.blit(self.img, self.rct)
 
+class scre:
+    def __init__(self, screen: pg.Surface):
+        self.fonto = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30) 
+        iro = (0, 0, 255)
+        score = 0
+        self.img = self.fonto.render("スコア", 0, iro)
+        self_img=self.img
+        self_img.center(100,50)
+
+    def update(self):
+        
 
 
 def main():
